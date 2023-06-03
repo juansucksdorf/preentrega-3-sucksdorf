@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edbfc6;
+  margin: 10px;
+  padding: 10px;
+}
+main {
+  background-color: #edbfc6;
+}
+
+  .titulos {
+    color: rgb(211, 36, 170);
+    background-color: #edbfc6;
+    font-size: 4rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
+    , Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    margin: 35px;
+    text-align: center;
+    text-decoration: 5px solid;
+   
+  }
+  
+  
+  h1 {
+    background-color: #edbfc6;
+    color: #b90f5c;
+    padding: 15px 15px 20px 20px;
+    margin: 15px 15px 85px 15px;
+    text-align: center;
+    text-decoration: 2px solid;
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    font-weight: bold;
+  
+  //estilos cars varias paginas
+  }
+  .grilla {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    border-radius: 15px;
+    background-color: #edbfc6;
+    grid-template-areas:
+      "area1 area2 area3 area4"
+      "area5 area6 area7 area8"
+      "area9 area10 area11 area12";
+    justify-items: center;
+  }
+  
+  .caja {
+    width: 95%;
+    height: 300px;
+    background-color: #96b1a7;
+    color: #060505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid rgb(7, 4, 25);
+    box-shadow: 5px 5px 7px 0px #7e7878;
+  }
+  
+  .caja-content {
+    justify-content: center;
+  }
+  
+  .card-description {
+    overflow: hidden;
+  }
+  .card-title {
+    color: #171414;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+  }
+  
+  
+  .c1 {
+    grid-area: area1;
+    display: flex;
+  }
+  .c1 img {
+    width: 70%;
+  }
+  .c1 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c2 {
+    grid-area: area2;
+  }
+  .c2 img {
+    width: 70%;
+  }
+  .c2 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c3 {
+    grid-area: area3;
+  }
+  .c3 img {
+    width: 70%;
+  }
+  .c3 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c4 {
+    grid-area: area4;
+  }
+  .c4 img {
+    width: 70%;
+  }
+  .c4 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c5 {
+    grid-area: area5;
+  }
+  .c5 img {
+    width: 70%;
+  }
+  .c5 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c6 {
+    grid-area: area6;
+  }
+  .c6 img {
+    width: 70%;
+  }
+  .c6 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c7 {
+    grid-area: area7;
+  }
+  .c7 img {
+    width: 70%;
+  }
+  .c7 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c8 {
+    grid-area: area8;
+  }
+  .c8 img {
+    width: 70%;
+  }
+  .c8 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c9 {
+    grid-area: area9;
+  }
+  .c9 img {
+    width: 70%;
+  }
+  .c9 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c10 {
+    grid-area: area10;
+  }
+  .c10 img {
+    width: 70%;
+  }
+  .c10 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c11 {
+    grid-area: area11;
+  }
+  .c11 img {
+    width: 70%;
+  }
+  .c11 div {
+    padding: 10px;
+    width: 30%;
+  }
+  .c12 {
+    grid-area: area12;
+  }
+  .c12 img {
+    width: 70%;
+  }
+  .c12 div {
+    padding: 10px;
+    width: 30%;
+  }
+  
+  .tamaño-iconos {
+    height: 19px;
+    width: 19px;
+    color: rgb(91, 44, 0);
+  }
+   
+  

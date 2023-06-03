@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 17px;
+  padding: 25px 9px 9px 9px;
+  width: 95%;
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 80%;
+  }
+  .copiright {
+    justify-content: flex-end;
+    margin-top: 35px;
+    padding-top: 35px;
+  }
+}

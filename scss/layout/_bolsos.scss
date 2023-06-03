@@ -1,0 +1,33 @@
+.card-body {
+    background-color: #b5b5b5;
+    color: #14150a;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .card-footer {
+    background-color: #b5b5b5;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: solid;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    gap: 15px;
+  }
+  .card-img-top {
+    height: 27rem;
+    object-fit: cover;
+  }
+  .col {
+    margin-bottom: 25px;
+  }
+  
+  .card {
+    gap: 15px;
+    background-color: #b5b5b5;
+  }
+  
+  .caja img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
