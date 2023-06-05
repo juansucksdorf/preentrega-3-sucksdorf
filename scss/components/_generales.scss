@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+
+body {
+  background-color: $main-color;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  position: fixed;
+}
+main {
+  background-color: $main-color;
+}
+
+.titulos {
+  color: rgb(211, 36, 170);
+  background-color: $main-color;
+  font-size: 4rem;
+  font-family: $font;
+  padding: 15px;
+  margin: 35px;
+  text-align: center;
+  text-decoration: 5px solid;
+}
+
+
+h1 {
+  background-color: $main-color;
+  color: #b90f5c;
+  text-decoration: dotted;
+  padding: 15px 15px 20px 20px;
+  margin: 15px 15px 85px 15px;
+  text-align: center;
+  text-decoration: 2px solid;
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  font-weight: bold;
+  }
+  
+.tamaño-iconos {
+  height: 19px;
+  width: 19px;
+  color: rgb(91, 44, 0);
+}

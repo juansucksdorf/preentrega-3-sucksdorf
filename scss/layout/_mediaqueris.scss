@@ -1,4 +1,5 @@
 @media (max-width: 320px) {
+  
   header {
     display: flex;
     flex-direction: column;
@@ -21,13 +22,7 @@
     width: 15px;
     height: 15px;
   }
-  .videos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 15px;
-  }
+  
 
   footer {
     display: flex;
@@ -54,19 +49,25 @@
     object-fit: cover;
     margin-left: 10px;
     align-items: center;
+    
+      #carouselexample{
+        margin: 10px 5px 10px 5px;
+      }
   }
   .carousel-item {
     height: 200px;
     width: 200px;
     margin-left: 10px;
+    
+    img {
+      height:fit-content;
+      width:fit-content;
+      object-fit: cover;
+      position: fixed;
+      margin-left: 15px;
+    }
   }
-  .carousel-item img {
-    height: 200px;
-    width: 200px;
-    object-fit: fill;
-    position: relative;
-    margin-left: 15px;
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -103,7 +104,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 35px;
+    margin: 15px;
     padding: 15px;
     align-items: center;
   }
@@ -185,7 +186,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 35px;
+    margin: 15px;
     padding: 15px;
     align-items: center;
   }
@@ -246,7 +247,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 35px;
+    margin: 15px;
     padding: 15px;
     align-items: center;
   }
