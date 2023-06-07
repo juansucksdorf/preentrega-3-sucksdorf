@@ -1,0 +1,43 @@
+.carteras {
+  .col {
+    margin-bottom: 25px;
+
+    .card {
+      gap: 15px;
+      background-color: $card-grey-color;
+
+      .card-body {
+        background-color: $card-grey-color;
+
+        .card-text {
+          text-align: center;
+        }
+      }
+
+      h3 {
+        color: #ae2020d7;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-decoration: underline;
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 15px 10px 25px 10px;
+      }
+
+      img {
+        height: 35rem;
+        object-fit: cover;
+      }
+
+      footer {
+        background-color: $card-grey-color;
+        font-size: 1.2rem;
+        text-align: center;
+        text-decoration: solid;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        gap: 15px;
+      }
+    }
+  }
+}

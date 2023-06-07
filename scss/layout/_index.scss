@@ -1,26 +1,59 @@
-.carousel-index {
+.imagenes{
   display: flex;
   justify-content: center;
-  gap: 45px;
-
-  #carouselExample {
-    height: 700px;
-    width: 1100px;
-  }
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  gap: 25px;
+  margin: 10px 10px 15px 15px;
+  padding: 10px;
   
-  .carousel-item {
-    height: 700px;
-    width: 1100px;
-    object-fit: cover;
-
-    img {
-        height: 700px;
-        width: 1100px;
-        object-fit: cover;
-        object-position: center;
-      }
+   article{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;   
   }
 
-  
+    .caja1{
+      height: 400px;
+      width: 700px;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+
+       img{
+        width: 90%;
+        height: 300px;
+        object-fit: contain;
+        gap: 15px;
+       }
+    }
+    
+}
+
+.videos{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 300px;
+  width: 100%;
+  object-fit: fill;
+    
+   article{
+    color: black;
+      font-size: 25px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+      text-decoration: none;
+      color: crimson;   
+   }
+
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
 }
 
