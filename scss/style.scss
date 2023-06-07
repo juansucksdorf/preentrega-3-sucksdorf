@@ -1,20 +1,274 @@
-//IMPORTS
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Oswald:wght@500&family=Roboto+Slab&display=swap");
+//import base
 
 @import "base/vars";
-@import "base/reset";
 @import "base/utilities";
+@import "base/reset";
 
-//IMPORTS COMPONENTS
-
-@import "components/generales";
-@import "components/navbar";
 @import "components/footer";
+@import "components/generales";
 
-//import layout
-
-@import "layout/index";
 @import "layout/bolsos";
 @import "layout/carteras";
+@import "layout/contacto";
+@import "layout/index";
 @import "layout/libros";
 @import "layout/mantas";
-@import "layout/contacto";
+@import "layout/mediaqueris";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*titulo en cada una de las paginas*/
+
+
+.grilla {
+  display: grid;
+  padding: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  border-radius: 15px;
+  background-color: #edbfc6;
+  grid-template-areas: "area1 area2 area3 area4" "area5 area6 area7 area8" "area9 area10 area11 area12";
+  justify-items: center;
+}
+
+.caja {
+  width: 95%;
+  height: 300px;
+  background-color: #96b1a7;
+  color: #060505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid rgb(7, 4, 25);
+  box-shadow: 5px 5px 7px 0px #7e7878;
+}
+
+.caja-content {
+  justify-content: center;
+}
+
+
+.caja img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+h2 {
+  font-size: 25px;
+  color: #171414;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+.card-description {
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 20px;
+  color: #2b0808;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-family: cursive;
+  margin: 15px;
+  padding: 15px;
+}
+
+.c1 {
+  grid-area: area1;
+  display: flex;
+}
+
+.c1 img {
+  width: 70%;
+}
+
+.c1 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c2 {
+  grid-area: area2;
+}
+
+.c2 img {
+  width: 70%;
+}
+
+.c2 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c3 {
+  grid-area: area3;
+}
+
+.c3 img {
+  width: 70%;
+}
+
+.c3 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c4 {
+  grid-area: area4;
+}
+
+.c4 img {
+  width: 70%;
+}
+
+.c4 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c5 {
+  grid-area: area5;
+}
+
+.c5 img {
+  width: 70%;
+}
+
+.c5 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c6 {
+  grid-area: area6;
+}
+
+.c6 img {
+  width: 70%;
+}
+
+.c6 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c7 {
+  grid-area: area7;
+}
+
+.c7 img {
+  width: 70%;
+}
+
+.c7 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c8 {
+  grid-area: area8;
+}
+
+.c8 img {
+  width: 70%;
+}
+
+.c8 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c9 {
+  grid-area: area9;
+}
+
+.c9 img {
+  width: 70%;
+}
+
+.c9 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c10 {
+  grid-area: area10;
+}
+
+.c10 img {
+  width: 70%;
+}
+
+.c10 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c11 {
+  grid-area: area11;
+}
+
+.c11 img {
+  width: 70%;
+}
+
+.c11 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.c12 {
+  grid-area: area12;
+}
+
+.c12 img {
+  width: 70%;
+}
+
+.c12 div {
+  padding: 10px;
+  width: 30%;
+}
+
+.tamaño-iconos {
+  height: 19px;
+  width: 19px;
+  color: rgb(91, 44, 0);
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
+
