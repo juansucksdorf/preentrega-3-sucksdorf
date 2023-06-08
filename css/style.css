@@ -242,11 +242,6 @@ header ul li a:hover {
   width: 100%;
   object-fit: fill;
 }
-.videos:hover {
-  height: 19rem;
-  width: 100%;
-  transition: all 1s;
-}
 .videos article {
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
