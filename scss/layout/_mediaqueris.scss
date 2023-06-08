@@ -1,8 +1,9 @@
-@media (max-width: 370px) {
+@media (max-width: 320px) {
+  
   header {
     display: flex;
     flex-direction: column;
-    height: 37rem;
+    height: 85rem;
     ul li {
       padding: 5px;
       margin: 12px;
@@ -12,7 +13,7 @@
     flex-direction: row;
     height: 15px;
     padding: 0;
-    margin: bottom 250px;
+    
   }
   main {
     display: flex;
@@ -37,7 +38,7 @@
     display: flex;
     flex-direction: column;
     height: 67rem;
-    width: 15rem;
+    width: 17rem;
     object-fit: cover;
     gap: 10px;
     margin: 5px 5px 5px 5px;
@@ -73,8 +74,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    height: 51rem;
-    width: 15rem;
+    height: 45rem;
+    width: 20rem;
     object-fit: cover;
     margin-left: 25px;
 
@@ -92,11 +93,11 @@
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   header {
     display: flex;
     flex-direction: column;
-    height: 24rem;
+    height: 35rem;
     ul li {
       padding: 5px;
       margin: 12px;
@@ -117,6 +118,7 @@
   footer {
     display: flex;
     flex-direction: column;
+    height: 20rem;
     width: 15rem;
     margin: -16px;
     padding: 65px;
@@ -131,7 +133,7 @@
     display: flex;
     flex-direction: column;
     height: 67rem;
-    width: 28rem;
+    width: 16rem;
     object-fit: cover;
     gap: 10px;
     margin: 5px 5px 5px 5px;
@@ -156,7 +158,7 @@
       img {
         width: 15rem;
         height: 300px;
-        object-fit: contain;
+        object-fit: cover;
         gap: 15px;
       }
     }
@@ -165,26 +167,17 @@
   .videos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     height: 51rem;
-    width: 26rem;
+    width: 16rem;
     object-fit: cover;
     margin-left: 16px;
-    margin-top: 108px;
+    margin-top: 10px;
 
-    article {
-      font-size: 1rem;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      text-align: center;
-      text-decoration: none;
-      color: crimson;
-    }
+    
 
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
+    
   }
 }
 @media (max-width: 600px) {
