@@ -12,7 +12,7 @@
   main {
     display: flex;
     flex-direction: column;
-    height: 138rem;
+    height: 150rem;
   }
 
   footer {
@@ -97,12 +97,7 @@
       margin: 12px;
     }
   }
-  .navegador {
-    flex-direction: row;
-    height: 15px;
-    padding: 0;
-    margin: bottom 250px;
-  }
+  
   main {
     display: flex;
     flex-direction: column;
@@ -126,7 +121,7 @@
   .imagenes {
     display: flex;
     flex-direction: column;
-    height: 67rem;
+    height: 90rem;
     width: 16rem;
     object-fit: cover;
     gap: 10px;
@@ -174,7 +169,8 @@
   header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 30rem;
+    width: 90%;
   }
   .navegador {
     flex-direction: column;
@@ -186,6 +182,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 150rem;
   }
   .tamaño-iconos {
     width: 25px;
@@ -194,10 +191,12 @@
   footer {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 20px;
-    padding: 34px;
-    justify-content: space-around;
+    justify-content:flex-end;
+    width: 100%;
+    height: 30rem;
+    margin: 5px;
+    padding: 5px;
+    
   }
 
   h1 {
