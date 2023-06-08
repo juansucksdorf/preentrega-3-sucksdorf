@@ -399,73 +399,89 @@ header ul li a:hover {
   header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 24rem;
+  }
+  header ul li {
+    padding: 5px;
+    margin: 12px;
   }
   .navegador {
-    flex-direction: column;
-    height: 25em;
+    flex-direction: row;
+    height: 15px;
     padding: 0;
-    margin: 0;
-  }
-  .tamaño-iconos {
-    width: 20px;
-    height: 20px;
+    margin: bottom 250px;
   }
   main {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 138rem;
   }
   footer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-  }
-  .grilla {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 35px;
-    padding: 15px;
-    align-items: center;
+    width: 15rem;
+    margin: -16px;
+    padding: 65px;
   }
   h1 {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0;
   }
-  img.logo {
-    height: 85px;
-    width: 85px;
-    justify-content: space-between;
-    align-self: flex-start;
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    height: 67rem;
+    width: 28rem;
+    object-fit: cover;
+    gap: 10px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
   }
-  .carousel-index {
+  .imagenes article {
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+  }
+  .imagenes .caja1 {
+    flex-direction: column;
+    height: 35rem;
+    width: 14rem;
+    gap: 15px;
+    align-items: center;
     justify-content: center;
-    gap: 5px;
   }
-  .carousel-item {
+  .imagenes .caja1 img {
+    width: 15rem;
     height: 300px;
-    width: 200px;
+    object-fit: contain;
+    gap: 15px;
   }
-  .carousel-item img {
-    height: 300px;
-    width: 200px;
+  .videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 51rem;
+    width: 26rem;
+    object-fit: cover;
+    margin-left: 16px;
+    margin-top: 108px;
+  }
+  .videos article {
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+  }
+  .videos iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 600px) {
-  .carousel-index {
-    gap: 15px;
-  }
-  .carousel-item {
-    height: 600px;
-    width: 250px;
-    object-fit: cover;
-  }
-  .carousel-item img {
-    height: 600px;
-    width: 250px;
-    object-fit: cover;
-  }
   header {
     display: flex;
     flex-direction: column;
