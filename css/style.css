@@ -187,6 +187,15 @@ header ul li a:hover {
   gap: 15px;
 }
 
+.p__index {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(27, 16, 18);
+  font-weight: bold;
+}
+
 .imagenes {
   display: flex;
   justify-content: center;
@@ -200,21 +209,27 @@ header ul li a:hover {
 }
 .imagenes article {
   font-size: 25px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: none;
   color: crimson;
+  font-weight: bold;
 }
 .imagenes .caja1 {
   height: 400px;
-  width: 700px;
+  width: 90%;
   gap: 15px;
   align-items: center;
   justify-content: center;
 }
+.imagenes .caja1:hover {
+  height: 600px;
+  width: 100%;
+  transition: all 1s;
+}
 .imagenes .caja1 img {
   width: 90%;
-  height: 300px;
+  height: 400px;
   object-fit: contain;
   gap: 15px;
 }
@@ -227,13 +242,18 @@ header ul li a:hover {
   width: 100%;
   object-fit: fill;
 }
+.videos:hover {
+  height: 19rem;
+  width: 100%;
+  transition: all 1s;
+}
 .videos article {
-  color: black;
   font-size: 25px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: none;
   color: crimson;
+  font-weight: bold;
 }
 .videos iframe {
   width: 100%;
@@ -319,11 +339,6 @@ header ul li a:hover {
   header ul li {
     padding: 5px;
     margin: 12px;
-  }
-  .navegador {
-    flex-direction: row;
-    height: 15px;
-    padding: 0;
   }
   main {
     display: flex;
@@ -499,14 +514,6 @@ header ul li a:hover {
     padding: 34px;
     justify-content: space-around;
   }
-  .grilla {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 35px;
-    padding: 15px;
-    align-items: center;
-  }
   h1 {
     font-size: 45px;
     margin: 0;
@@ -517,28 +524,12 @@ header ul li a:hover {
     justify-content: space-between;
     align-self: flex-start;
   }
-  .carousel-index {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-  }
-  .carousel-item {
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
-  }
 }
 @media (min-width: 601px) and (max-width: 1023px) {
   header {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .navegador {
-    flex-direction: column;
-    height: 25em;
-    padding: 0;
-    margin: 0;
   }
   main {
     display: flex;
@@ -570,21 +561,6 @@ header ul li a:hover {
     width: 85px;
     justify-content: space-between;
     align-self: flex-start;
-  }
-  .carousel-index {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-  }
-  .carousel-item {
-    height: 600px;
-    width: 800px;
-    object-fit: cover;
-    margin: 15px 15px 25px 15px;
-  }
-  .copiright {
-    text-align: right;
-    justify-content: right;
   }
 }
 /*titulo en cada una de las paginas*/

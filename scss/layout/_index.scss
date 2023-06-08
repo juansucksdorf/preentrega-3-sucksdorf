@@ -1,4 +1,13 @@
-.imagenes{
+.p__index {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(27, 16, 18);
+  font-weight: bold;
+}
+.imagenes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,52 +17,65 @@
   gap: 25px;
   margin: 10px 10px 15px 15px;
   padding: 10px;
-  
-   article{
+
+  article {
     font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: center;
     text-decoration: none;
-    color: crimson;   
+    color: crimson;
+    font-weight: bold;
   }
 
-    .caja1{
-      height: 400px;
-      width: 700px;
-      gap: 15px;
-      align-items: center;
-      justify-content: center;
+  .caja1 {
+    height: 400px;
+    width: 90%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 
-       img{
-        width: 90%;
-        height: 300px;
-        object-fit: contain;
-        gap: 15px;
-       }
+    &:hover {
+      height: 600px;
+      width: 100%;
+      transition: all 1s;
     }
-    
+
+    img {
+      width: 90%;
+      height: 400px;
+      object-fit: contain;
+      gap: 15px;
+    }
+  }
 }
 
-.videos{
+.videos {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   height: 17rem;
   width: 100%;
   object-fit: fill;
-    
-   article{
-    color: black;
-      font-size: 25px;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      text-align: center;
-      text-decoration: none;
-      color: crimson;   
-   }
 
-    iframe{
-      width: 100%;
-      height: 100%;
-    }
+  &:hover {
+    height: 19rem;
+    width: 100%;
+    transition: all 1s;
+  }
+
+  article {
+    font-size: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
-
