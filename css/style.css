@@ -191,7 +191,7 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 35rem;
   width: 100%;
   object-fit: cover;
   gap: 25px;
@@ -223,7 +223,7 @@ header ul li a:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  height: 300px;
+  height: 17rem;
   width: 100%;
   object-fit: fill;
 }
@@ -310,11 +310,15 @@ header ul li a:hover {
   gap: 15px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 37rem;
+  }
+  header ul li {
+    padding: 5px;
+    margin: 12px;
   }
   .navegador {
     flex-direction: row;
@@ -325,35 +329,70 @@ header ul li a:hover {
   main {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 138rem;
   }
-  .tamaño-iconos {
-    width: 15px;
-    height: 15px;
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin: -16px;
+    padding: 65px;
+  }
+  h1 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    height: 67rem;
+    width: 15rem;
+    object-fit: cover;
+    gap: 10px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+  }
+  .imagenes article {
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+  }
+  .imagenes .caja1 {
+    flex-direction: column;
+    height: 35rem;
+    width: 14rem;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagenes .caja1 img {
+    width: 15rem;
+    height: 300px;
+    object-fit: contain;
+    gap: 15px;
   }
   .videos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 15px;
+    gap: 20px;
+    height: 51rem;
+    width: 15rem;
+    object-fit: cover;
+    margin-left: 25px;
   }
-  footer {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
+  .videos article {
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
   }
-  .grilla {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-  h1 {
-    font-size: 25px;
-    margin: 0;
+  .videos iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 480px) {
