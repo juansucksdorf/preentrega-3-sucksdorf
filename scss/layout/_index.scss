@@ -1,76 +1,130 @@
-.p__index {
-  font-size: 25px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(27, 16, 18);
-  font-weight: bold;
-}
-.imagenes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35rem;
-  width: 100%;
-  object-fit: cover;
-  gap: 25px;
-  margin: 10px 10px 15px 15px;
-  padding: 10px;
-
-  .parrafo{
-    font-size: 25px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: crimson;
-    font-weight: bold;
-  }
-
-  .caja1 {
-    height: 400px;
-    width: 90%;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-      height: 600px;
-      width: 100%;
-      transition: all 1s;
-    }
-
-    img {
-      width: 90%;
-      height: 400px;
-      object-fit: contain;
-      gap: 15px;
-    }
-  }
-}
-
-.videos {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  height: 17rem;
-  width: 100%;
-  object-fit: fill;
-
-
-  .parrafo-video{
-    font-size: 25px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: crimson;
-    font-weight: bold;
-  }
-
-  iframe {
+main {
+  .animacion {
     width: 100%;
-    height: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: $main-color;
+    margin-bottom: 35px;
+
+    .caja {
+      width: 80%;
+      height: 300px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      background-color: rgba(5, 124, 124, 0.66);
+      animation-name: animacion;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      transform: translateX(0%);
+
+      img {
+        width: 40%;
+      }
+
+      &__body {
+        padding: 10px;
+      }
+    }
+  }
+
+  .p__index {
+    font-size: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(27, 16, 18);
+    font-weight: bold;
+  }
+  .imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+    gap: 25px;
+    margin: 10px 10px 15px 15px;
+    padding: 10px;
+
+    .parrafo {
+      font-size: 1.5rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      color: crimson;
+      font-weight: bold;
+    }
+
+    .caja1 {
+      height: 400px;
+      width: 90%;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        height: 600px;
+        width: 100%;
+        transition: all 1s;
+      }
+
+      img {
+        width: 90%;
+        height: 400px;
+        object-fit: contain;
+        gap: 15px;
+      }
+    }
+  }
+
+  .videos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 17rem;
+    width: 100%;
+    object-fit: fill;
+
+    .parrafo-video {
+      font-size: 1.5rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      color: crimson;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .logo {
+    img {
+      width: 5px;
+      height: 5px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
+
+@keyframes animacion {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+
+  100% {
+    opacity: 1;
   }
 }

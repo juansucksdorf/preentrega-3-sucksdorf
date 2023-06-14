@@ -64,22 +64,12 @@ h1 {
   background-color: #edbfc6;
   color: #b90f5c;
   padding: 15px 15px 20px 20px;
-  margin: 15px 15px 85px 15px;
+  margin: 15px 15px 25px 15px;
   text-align: center;
   text-decoration: 2px solid;
   font-family: "Dancing Script", cursive;
   font-size: 75px;
   font-weight: bold;
-}
-
-img.logo {
-  display: flex;
-  height: fit-content;
-  height: 185px;
-  width: 170px;
-  justify-content: space-between;
-  align-self: flex-start;
-  border-radius: 20px;
 }
 
 header {
@@ -100,7 +90,7 @@ header ul li {
   text-decoration: solid;
   background-color: transparent;
 }
-header ul li a {
+header ul li .nav-link {
   background-color: transparent;
   color: #14150a;
   padding: 15px;
@@ -109,12 +99,21 @@ header ul li a {
   font-family: initial;
   font-weight: bold;
 }
-header ul li a:hover {
+header ul li .nav-link:hover {
   background-color: rgba(186, 57, 113, 0.7764705882);
   transition: 0.2s;
   border: 3px solid rgba(218, 158, 28, 0.5058823529);
   text-decoration: solid;
   border-radius: 5px;
+}
+header img.logo {
+  display: flex;
+  height: fit-content;
+  height: 10rem;
+  width: 10rem;
+  justify-content: space-between;
+  align-self: flex-start;
+  border-radius: 15px;
 }
 
 .col {
@@ -187,7 +186,57 @@ header ul li a:hover {
   gap: 15px;
 }
 
-.p__index {
+.container-contact {
+  display: block;
+  margin: 15px 35px 25px 35px;
+  width: 90rem;
+}
+.container-contact p {
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container-contact .btn {
+  margin: 25px 15px 15px 15px;
+  background-color: rgb(197, 6, 6);
+  height: 4rem;
+  width: 5.5rem;
+  font-size: 1.4rem;
+}
+.container-contact .form-group {
+  color: black;
+  font-size: 1.5rem;
+}
+
+main .animacion {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #edbfc6;
+  margin-bottom: 35px;
+}
+main .animacion .caja {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: rgba(5, 124, 124, 0.66);
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  transform: translateX(0%);
+}
+main .animacion .caja img {
+  width: 40%;
+}
+main .animacion .caja__body {
+  padding: 10px;
+}
+main .p__index {
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
@@ -195,8 +244,7 @@ header ul li a:hover {
   color: rgb(27, 16, 18);
   font-weight: bold;
 }
-
-.imagenes {
+main .imagenes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,34 +255,33 @@ header ul li a:hover {
   margin: 10px 10px 15px 15px;
   padding: 10px;
 }
-.imagenes .parrafo {
-  font-size: 25px;
+main .imagenes .parrafo {
+  font-size: 1.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: none;
   color: crimson;
   font-weight: bold;
 }
-.imagenes .caja1 {
+main .imagenes .caja1 {
   height: 400px;
   width: 90%;
   gap: 15px;
   align-items: center;
   justify-content: center;
 }
-.imagenes .caja1:hover {
+main .imagenes .caja1:hover {
   height: 600px;
   width: 100%;
   transition: all 1s;
 }
-.imagenes .caja1 img {
+main .imagenes .caja1 img {
   width: 90%;
   height: 400px;
   object-fit: contain;
   gap: 15px;
 }
-
-.videos {
+main .videos {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -242,19 +289,34 @@ header ul li a:hover {
   width: 100%;
   object-fit: fill;
 }
-.videos .parrafo-video {
-  font-size: 25px;
+main .videos .parrafo-video {
+  font-size: 1.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   text-decoration: none;
   color: crimson;
   font-weight: bold;
 }
-.videos iframe {
+main .videos iframe {
   width: 100%;
   height: 100%;
 }
+main .logo img {
+  width: 5px;
+  height: 5px;
+  object-fit: cover;
+  border-radius: 5px;
+}
 
+@keyframes animacion {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .libros .col {
   margin-bottom: 25px;
 }
@@ -526,12 +588,13 @@ header ul li a:hover {
   main {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    height: 76rem;
   }
   footer {
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 25px;
     padding: 15px;
     width: 90%;

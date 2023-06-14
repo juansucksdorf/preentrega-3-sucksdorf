@@ -28,7 +28,7 @@ body {
     background-color: #edbfc6;
     color: #b90f5c;
     padding: 15px 15px 20px 20px;
-    margin: 15px 15px 85px 15px;
+    margin: 15px 15px 25px 15px;
     text-align: center;
     text-decoration: 2px solid;
     font-family: "Dancing Script", cursive;
@@ -36,15 +36,7 @@ body {
     font-weight: bold;
   }
   
-  img.logo {
-    display: flex;
-    height: fit-content;
-    height: 185px;
-    width: 170px;
-    justify-content: space-between;
-    align-self: flex-start;
-    border-radius: 20px;
-  }
+  
 
   
   //navbar 
@@ -63,7 +55,8 @@ body {
             margin: 16px;
             text-decoration: solid;
             background-color: transparent;
-            a {
+
+            .nav-link {
                 background-color: transparent;
                 color: #14150a;
                 padding: 15px;
@@ -81,5 +74,14 @@ body {
                   }
               }
           }
+      }
+      img.logo {
+        display: flex;
+        height: fit-content;
+        height: 10rem;
+        width: 10rem;
+        justify-content: space-between;
+        align-self: flex-start;
+        border-radius: 15px;
       }
   }

@@ -54,27 +54,54 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="./assets/logo1.jpg.jpg" alt="logo" />
-      <div class="menu_nav">
-        <nav>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./paginas/bolsos.html">Bolsos</a></li>
-            <li><a href="./paginas/carteras.html">Carteras</a></li>
-            <li><a href="./paginas/libros.html">Libros</a></li>
-            <li><a href="./paginas/mantas.html">Mantas</a></li>
-            <li><a href="./paginas/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+      <img class="logo" src="./assets/logo.png" alt="logo los lios de ana">
+     <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./paginas/bolsos.html">Bolsos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./paginas/carteras.html">Carteras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./paginas/mantas.html">Mantas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./paginas/libros.html">Libros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
     <main>
       <h1>Los lios de Ana</h1>
-      <p class="p__index">
-        Somos una empresa familiar dedicada al mundo del pachtwork, nuestros
-        trabajos son unicos y por lo tanto irrepetibles.
-      </p>
-
+      <!--animacion con parrafo-->
+      <section class="animacion">
+        <article class="caja">
+          <img src="./assets/imagen-patch.png" alt="imagen patch">
+          <div class="caja__body">
+            
+            <p class="p__index">
+              Somos una empresa familiar dedicada al mundo del pachtwork, nuestros
+              trabajos son unicos e irrepetibles.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!--imagenes-->
       <section class="imagenes">
         <div class="caja1">
           <img src="./assets/almohadon-1.png" alt="manta bailarinas" />
@@ -90,7 +117,7 @@
           acompañada por la vision particular de cada uno de nuestros clientes.
         </p>
       </section>
-
+<!--videos-->
       <section class="videos">
         <p class="parrafo-video">
           Ademas acompañamos a los mas chicos en su crecimiento con libros
