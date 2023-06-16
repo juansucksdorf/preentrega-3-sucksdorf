@@ -388,7 +388,7 @@ main .logo img {
   gap: 15px;
 }
 
-@media (min-width: 420px) and (max-width: 600px) {
+@media (min-width: 420px) and (max-width: 576px) {
   header .logo {
     height: 7rem;
     width: 7rem;
@@ -450,6 +450,139 @@ main .logo img {
   }
   main .videos .parrafo-video {
     margin: 15px 10px;
+  }
+  footer {
+    margin: 9px;
+    padding: 11px 9px 9px 9px;
+    width: 100%;
+  }
+  footer .copiright p {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 731px) {
+  header ul li {
+    padding: 10px;
+    margin: 11px;
+  }
+  header ul li .nav-link {
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+  main h1 {
+    padding: 5px 5px 15px 5px;
+    margin: 5px 5px 5px 5px;
+    text-decoration: 1px solid;
+    font-size: 45px;
+  }
+  main .animacion {
+    width: 100%;
+    height: 401px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #edbfc6;
+    margin-bottom: 35px;
+  }
+  main .animacion .caja {
+    width: 100%;
+    height: 310px;
+  }
+  main .animacion .caja img {
+    width: 50%;
+  }
+  main .animacion .caja__body {
+    height: 165px;
+  }
+  main .animacion .caja__body .p__index {
+    font-size: 20px;
+  }
+  main .imagenes {
+    height: 85rem;
+    width: 100%;
+    gap: 1px;
+    margin: 7px 4px 6px 10px;
+    padding: 1px;
+    flex-direction: column-reverse;
+  }
+  main .imagenes .caja1 {
+    height: 500px;
+  }
+  main .videos {
+    margin-left: 75px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    height: 60rem;
+    width: 70%;
+    object-fit: fill;
+  }
+  footer {
+    margin: 9px;
+    padding: 11px 9px 9px 9px;
+    width: 100%;
+  }
+  footer .copiright p {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 731px) and (max-width: 992px) {
+  header ul li {
+    padding: 10px;
+    margin: 11px;
+  }
+  header ul li .nav-link {
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+  main h1 {
+    font-size: 55px;
+  }
+  main .animacion {
+    width: 100%;
+    height: 401px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #edbfc6;
+    margin-bottom: 35px;
+  }
+  main .animacion .caja {
+    width: 100%;
+    height: 310px;
+  }
+  main .animacion .caja img {
+    width: 50%;
+  }
+  main .animacion .caja__body {
+    height: 165px;
+  }
+  main .animacion .caja__body .p__index {
+    font-size: 20px;
+  }
+  main .imagenes {
+    height: 85rem;
+    width: 100%;
+    gap: 1px;
+    margin: 7px 4px 6px 10px;
+    padding: 1px;
+    flex-direction: column-reverse;
+  }
+  main .imagenes .caja1 {
+    height: 500px;
+  }
+  main .videos {
+    margin-left: 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    height: 60rem;
+    width: 70%;
+    object-fit: fill;
   }
   footer {
     margin: 9px;
