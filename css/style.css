@@ -388,7 +388,7 @@ main .logo img {
   gap: 15px;
 }
 
-@media (min-width: 420px) and (max-width: 576px) {
+@media (min-width: 350px) and (max-width: 576px) {
   header .logo {
     height: 7rem;
     width: 7rem;
