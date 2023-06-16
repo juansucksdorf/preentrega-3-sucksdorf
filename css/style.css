@@ -390,42 +390,38 @@ main .logo img {
 
 @media (min-width: 350px) and (max-width: 576px) {
   header .logo {
-    height: 7rem;
-    width: 7rem;
+    height: 4rem;
+    width: 4rem;
   }
   header ul li {
-    padding: 5px;
-    margin: 6px;
+    padding: 4px;
+    margin: 5px;
   }
   header ul li .nav-link {
-    padding: 3px;
-    font-size: 0.9rem;
+    padding: 2px;
+    font-size: 0.8rem;
   }
   main h1 {
-    padding: 5px 5px 15px 5px;
-    margin: 5px 5px 5px 5px;
-    text-decoration: 1px solid;
-    font-size: 45px;
+    padding: 3px 3px 10px 3px;
+    margin: 3px 3px 3px 3px;
+    text-decoration: 0.5px;
+    font-size: 25px;
   }
   main .animacion {
     width: 100%;
-    height: 401px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #edbfc6;
-    margin-bottom: 35px;
+    height: 400px;
+    margin-bottom: 30px;
   }
   main .animacion .caja {
     width: 100%;
-    height: 310px;
+    height: 300px;
+    align-items: center;
   }
   main .animacion .caja img {
     width: 50%;
   }
   main .animacion .caja__body {
-    height: 165px;
+    height: 212px;
   }
   main .animacion .caja__body .p__index {
     font-size: 15px;
@@ -439,7 +435,7 @@ main .logo img {
     flex-direction: column-reverse;
   }
   main .imagenes .caja1 {
-    height: 500px;
+    height: 330px;
   }
   main .videos {
     flex-direction: column;
