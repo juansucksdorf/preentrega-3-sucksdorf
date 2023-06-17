@@ -12,9 +12,7 @@ main {
     .caja {
       width: 80%;
       height: 300px;
-      display: flex;
-      justify-content: left;
-      align-items: center;
+      @include flex(left, center, 2px);
       background-color: rgba(5, 124, 124, 0.66);
       animation-name: animacion;
       animation-iteration-count: 1;
@@ -42,13 +40,10 @@ main {
     font-weight: bold;
   }
   .imagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center, 25px);
     height: 35rem;
     width: 100%;
     object-fit: cover;
-    gap: 25px;
     margin: 10px 10px 15px 15px;
     padding: 10px;
 
@@ -85,12 +80,10 @@ main {
   }
 
   .videos {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    height: 17rem;
+    @include flex(space-between, center, 20px);
+    height: 13rem;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 
     .parrafo-video {
       font-size: 1.5rem;
