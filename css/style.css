@@ -390,6 +390,105 @@ main .logo img {
   gap: 15px;
 }
 
+@media (min-width: 290px) and (max-width: 349px) {
+  header .logo {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  header ul li {
+    padding: 3px;
+    margin: 4px;
+  }
+  header ul li .nav-link {
+    padding: 1px;
+    font-size: 0.7rem;
+  }
+  main h1 {
+    padding: 2px 2px 8px 2px;
+    margin: 2px 2px 25px 2px;
+    text-decoration: 0.4px;
+    font-size: 34px;
+  }
+  main .animacion {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 25px;
+  }
+  main .animacion .caja {
+    width: 100%;
+    height: 270px;
+    align-items: center;
+  }
+  main .animacion .caja img {
+    width: 50%;
+  }
+  main .animacion .caja__body {
+    height: 220px;
+    align-items: center;
+  }
+  main .animacion .caja__body .p__index {
+    font-size: 14px;
+  }
+  main .imagenes {
+    height: 66rem;
+    width: 100%;
+    gap: 1px;
+    margin: 6px 3px 5px 9px;
+    padding: 1px;
+    flex-direction: column-reverse;
+  }
+  main .imagenes .parrafo {
+    font-size: 1.2rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+  }
+  main .imagenes .caja1 {
+    height: 250px;
+  }
+  main .videos {
+    flex-direction: column;
+    gap: 40px;
+    height: 55rem;
+    width: 100%;
+    object-fit: fill;
+  }
+  main .videos .parrafo-video {
+    margin: 13px 8px;
+    font-size: 1.2rem;
+  }
+  footer {
+    margin: 5px;
+    padding: 2px 2px 2px 2px;
+    width: 100%;
+  }
+  footer .copiright p {
+    font-size: 7px;
+    margin-bottom: 0;
+  }
+  .main__contact {
+    height: 45rem;
+    width: 90%;
+  }
+  .container-contact {
+    margin: 4px 4px 12px 4px;
+    width: 17rem;
+    padding: 4px;
+  }
+  .container-contact p {
+    font-size: 0.8rem;
+  }
+  .container-contact .form-group {
+    font-size: 0.8rem;
+  }
+  .container-contact .btn {
+    font-size: 0.8rem;
+    height: 2.5rem;
+    width: 3.8rem;
+  }
+}
 @media (min-width: 350px) and (max-width: 576px) {
   header .logo {
     height: 4rem;
@@ -427,7 +526,7 @@ main .logo img {
     align-items: center;
   }
   main .animacion .caja__body .p__index {
-    font-size: 17px;
+    font-size: 15px;
   }
   main .imagenes {
     height: 85rem;
