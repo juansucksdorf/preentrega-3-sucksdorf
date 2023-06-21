@@ -1,4 +1,41 @@
 main {
+  .card {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    background-color: #edbfc6;
+    grid-template-areas: "area1" "area2" "area3";
+    justify-items: center;
+    border: none;
+    object-fit: cover;
+
+    .c1 {
+      grid-area: area1;
+    }
+
+    .c1 img {
+      width: 100%;
+    }
+
+    .c2 {
+      grid-area: area2;
+    }
+
+    .c2 img {
+      width: 100%;
+    }
+
+    .c3 {
+      grid-area: area3;
+    }
+
+    .c3 img {
+      width: 100%;
+    }
+  }
+
   .animacion {
     width: 100%;
     height: 350px;
@@ -17,7 +54,7 @@ main {
       animation-name: animacion;
       animation-iteration-count: 1;
       animation-timing-function: linear;
-      animation-duration: 2s;
+      animation-duration: 2.5s;
       transform: translateX(0%);
 
       img {
@@ -31,7 +68,7 @@ main {
   }
 
   .p__index {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: center;
@@ -64,17 +101,12 @@ main {
       align-items: center;
       justify-content: center;
 
-      &:hover {
-        height: 600px;
-        width: 100%;
-        transition: all 1s;
-      }
-
+      
       img {
         width: 90%;
         height: 400px;
-        object-fit: contain;
-        gap: 15px;
+        object-fit: cover;
+       
       }
     }
   }
@@ -86,7 +118,7 @@ main {
     object-fit: cover;
 
     .parrafo-video {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       text-align: center;
