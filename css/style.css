@@ -152,20 +152,20 @@ h1 {
   gap: 15px;
 }
 
-.carteras .col {
+.col {
   margin-bottom: 25px;
 }
-.carteras .col .card {
+.col .card {
   gap: 15px;
   background-color: #b5b5b5;
 }
-.carteras .col .card .card-body {
+.col .card .card-body {
   background-color: #b5b5b5;
 }
-.carteras .col .card .card-body .card-text {
+.col .card .card-body .card-text {
   text-align: center;
 }
-.carteras .col .card h3 {
+.col .card h3 {
   color: rgba(174, 32, 32, 0.8431372549);
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -174,11 +174,11 @@ h1 {
   text-align: center;
   margin: 15px 10px 25px 10px;
 }
-.carteras .col .card img {
+.col .card img {
   height: 35rem;
   object-fit: cover;
 }
-.carteras .col .card footer {
+.col .card footer {
   background-color: #b5b5b5;
   font-size: 1.2rem;
   text-align: center;
@@ -208,7 +208,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-main .card {
+main .card__index {
   display: grid;
   padding: 15px;
   grid-template-columns: repeat(1, 1fr);
@@ -220,22 +220,22 @@ main .card {
   border: none;
   object-fit: cover;
 }
-main .card .c1 {
+main .card__index .c1 {
   grid-area: area1;
 }
-main .card .c1 img {
+main .card__index .c1 img {
   width: 100%;
 }
-main .card .c2 {
+main .card__index .c2 {
   grid-area: area2;
 }
-main .card .c2 img {
+main .card__index .c2 img {
   width: 100%;
 }
-main .card .c3 {
+main .card__index .c3 {
   grid-area: area3;
 }
-main .card .c3 img {
+main .card__index .c3 img {
   width: 100%;
 }
 main .animacion {
@@ -344,20 +344,20 @@ main .logo img {
     opacity: 1;
   }
 }
-.libros .col {
+.col {
   margin-bottom: 25px;
 }
-.libros .col .card {
+.col .card {
   gap: 15px;
   background-color: #b5b5b5;
 }
-.libros .col .card .card-body {
+.col .card .card-body {
   background-color: #b5b5b5;
 }
-.libros .col .card .card-body .card-text {
+.col .card .card-body .card-text {
   text-align: center;
 }
-.libros .col .card h3 {
+.col .card h3 {
   color: rgba(174, 32, 32, 0.8431372549);
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -366,11 +366,11 @@ main .logo img {
   text-align: center;
   margin: 15px 10px 25px 10px;
 }
-.libros .col .card img {
+.col .card img {
   height: 30rem;
   object-fit: cover;
 }
-.libros .col .card footer {
+.col .card footer {
   background-color: #b5b5b5;
   font-size: 1.2rem;
   text-align: center;
@@ -379,20 +379,20 @@ main .logo img {
   gap: 25px;
 }
 
-.mantas .col {
+.col {
   margin-bottom: 25px;
 }
-.mantas .col .card {
+.col .card {
   gap: 15px;
   background-color: #b5b5b5;
 }
-.mantas .col .card .card-body {
+.col .card .card-body {
   background-color: #b5b5b5;
 }
-.mantas .col .card .card-body .card-text {
+.col .card .card-body .card-text {
   text-align: center;
 }
-.mantas .col .card h3 {
+.col .card h3 {
   color: rgba(174, 32, 32, 0.9647058824);
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -401,11 +401,11 @@ main .logo img {
   text-align: center;
   margin: 15px 10px 25px 10px;
 }
-.mantas .col .card img {
+.col .card img {
   height: 35rem;
   object-fit: cover;
 }
-.mantas .col .card footer {
+.col .card footer {
   background-color: #b5b5b5;
   font-size: 1.2rem;
   text-align: center;
@@ -512,6 +512,12 @@ main .logo img {
     height: 2.5rem;
     width: 3.8rem;
   }
+  .col .card {
+    gap: 3px;
+  }
+  .col .card img {
+    height: 18rem;
+  }
 }
 @media (min-width: 350px) and (max-width: 576px) {
   header .logo {
@@ -602,6 +608,12 @@ main .logo img {
     height: 3rem;
     width: 4rem;
   }
+  .col .card {
+    gap: 4px;
+  }
+  .col .card img {
+    height: 25rem;
+  }
 }
 @media (min-width: 411px) and (max-width: 576px) {
   main .caja1 {
@@ -626,6 +638,12 @@ main .logo img {
     font-size: 1rem;
     height: 3rem;
     width: 4rem;
+  }
+  .col .card {
+    gap: 6px;
+  }
+  .col .card img {
+    height: 38rem;
   }
 }
 @media (min-width: 577px) and (max-width: 731px) {
@@ -715,6 +733,12 @@ main .logo img {
   footer .copiright p {
     margin-bottom: 0;
   }
+  .col .card {
+    gap: 8px;
+  }
+  .col .card img {
+    height: 42rem;
+  }
 }
 @media (min-width: 731px) and (max-width: 992px) {
   header ul li {
@@ -802,6 +826,28 @@ main .logo img {
   }
   footer .copiright p {
     margin-bottom: 0;
+  }
+  .col .card {
+    gap: 2px;
+  }
+  .col .card img {
+    height: 48rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .col .card {
+    gap: 2px;
+  }
+  .col .card img {
+    height: 20rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .col .card {
+    gap: 2px;
+  }
+  .col .card img {
+    height: 20rem;
   }
 }
 @media (min-width: 800px) and (max-width: 992px) {
@@ -921,6 +967,21 @@ main .logo img {
   }
   footer .copiright p {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1250px) {
+  header ul li {
+    margin: 4px;
+    padding: 4px;
+  }
+  header ul li .nav-link {
+    font-size: 1.6rem;
+  }
+  .col .card {
+    gap: 2px;
+  }
+  .col .card img {
+    height: 20rem;
   }
 }
 /*titulo en cada una de las paginas*/

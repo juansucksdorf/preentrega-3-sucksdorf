@@ -1,22 +1,21 @@
-  .container-contact {
-    display: block;
-    margin: 15px 35px 25px 35px;
-    width: 90rem;
+.container-contact {
+  display: block;
+  margin: 15px 35px 25px 35px;
+  width: 90rem;
 
-    p {
-      font-size: 1.5rem;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
-    .btn {
-      margin: 25px 15px 15px 15px;
-      background-color: rgb(197, 6, 6);
-      height: 4rem;
-      width: 5.5rem;
-      font-size: 1.4rem;
-    }
-    .form-group {
-      color: black;
-      font-size: 1.5rem;
-    }
+  p {
+    font-size: 1.5rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-
+  .btn {
+    margin: 25px 15px 15px 15px;
+    background-color: rgb(197, 6, 6);
+    height: 4rem;
+    width: 5.5rem;
+    font-size: 1.4rem;
+  }
+  .form-group {
+    color: black;
+    font-size: 1.5rem;
+  }
+}
