@@ -7,7 +7,7 @@
 let nombre = prompt("Ingresa tu nombre");
 
 function saludar(){
-  return
+  
   console.log("Hola " + nombre + " Ingresa a continuacion los datos en el buscador de regalos y te ayudaremos a encontrar lo que estas buscando");
 }
  saludar()
