@@ -1,111 +1,132 @@
 const d = document;
 
-const section1 = d.getElementById('mainBuscador1');
-const formulario = d.createElement('form');
+const section1 = d.getElementById("mainBuscador1");
+const formulario = d.createElement("form");
 section1.appendChild(formulario);
-const divForm = d.createElement('div');
-divForm.classList = 'row mb-3';
+const divForm = d.createElement("div");
+divForm.classList = "row mb-3";
 formulario.appendChild(divForm);
 
-const divCol1 = d.createElement('div');
-divCol1.classList = 'col-sm-10';
+const divCol1 = d.createElement("div");
+divCol1.classList = "col-sm-10";
 divForm.appendChild(divCol1);
 
-const input1 = d.createElement('input');
-input1.classList = 'form-control';
-input1.setAttribute('type', 'search');
+const input1 = d.createElement("input");
+input1.classList = "form-control";
+input1.setAttribute("type", "search");
 divCol1.appendChild(input1);
-input1.setAttribute('id', 'estacionInput');
+input1.setAttribute("id", "estacionInput");
 
-const lebel1 = d.createElement('label');
-lebel1.classList = 'col-sm-2 col-form-label';
-lebel1.setAttribute('for', 'estacionInput');
-lebel1.textContent = 'Estación Favorita';
+const lebel1 = d.createElement("label");
+lebel1.classList = "col-sm-2 col-form-label";
+lebel1.setAttribute("for", "estacionInput");
+lebel1.textContent = "Estación Favorita";
 divForm.appendChild(lebel1);
 
-const divCol2 = d.createElement('div');
-divCol2.classList = 'col-sm-10'; 
+const divCol2 = d.createElement("div");
+divCol2.classList = "col-sm-10";
 divForm.appendChild(divCol2);
 
-const input2 = d.createElement('input');
-input2.classList = 'form-control';
-input2.setAttribute('type', 'search');
-input2.setAttribute('id', 'edadInput');
+const input2 = d.createElement("input");
+input2.classList = "form-control";
+input2.setAttribute("type", "search");
+input2.setAttribute("id", "edadInput");
 divCol2.appendChild(input2);
 
-const lebel2 = d.createElement('label');
-lebel2.classList = 'col-sm-2 col-form-label';
-lebel2.setAttribute('for', 'edadInput');
-lebel2.textContent = 'Edad';
+const lebel2 = d.createElement("label");
+lebel2.classList = "col-sm-2 col-form-label";
+lebel2.setAttribute("for", "edadInput");
+lebel2.textContent = "Edad";
 divForm.appendChild(lebel2);
 
-const boton = d.createElement('button');
-boton.classList = 'btn btn-primary';
-boton.setAttribute('type', 'submit');
-boton.textContent = 'Buscar';
+const boton = d.createElement("button");
+boton.classList = "btn btn-primary";
+boton.setAttribute("type", "submit");
+boton.textContent = "Buscar";
 formulario.appendChild(boton);
-boton.setAttribute('id', 'submitButton');
+boton.setAttribute("id", "submitButton");
 
-const parrafo = d.getElementById('parrafoBuscador');
+const parrafo = d.getElementById("parrafoBuscador");
 
-const seccion2 = d.getElementById('mainBuscador2');
-const formulario2 = d.createElement('form');
+const seccion2 = d.getElementById("mainBuscador2");
+const formulario2 = d.createElement("form");
 seccion2.appendChild(formulario2);
-const divForm2 = d.createElement('div');
-divForm2.classList = 'row mb-3';
+const divForm2 = d.createElement("div");
+divForm2.classList = "row mb-3";
 formulario2.appendChild(divForm2);
 
-const divCol3 = d.createElement('div');
-divCol3.classList = 'col-sm-10';
+const divCol3 = d.createElement("div");
+divCol3.classList = "col-sm-10";
 divForm2.appendChild(divCol3);
 
-const input3 = d.createElement('input');
-input3.classList = 'form-control';
-input3.setAttribute('type', 'search');
-input3.setAttribute('id', 'Input3');
+const input3 = d.createElement("input");
+input3.classList = "form-control";
+input3.setAttribute("type", "search");
+input3.setAttribute("id", "Input3");
 divCol3.appendChild(input3);
 
-const lebel3 = d.createElement('label');
-lebel3.classList = 'col-sm-2 col-form-label';
-lebel3.setAttribute('for', 'Input3');
-lebel3.textContent = 'Regalo elegido';
+const lebel3 = d.createElement("label");
+lebel3.classList = "col-sm-2 col-form-label";
+lebel3.setAttribute("for", "Input3");
+lebel3.textContent = "Regalo elegido";
 divForm2.appendChild(lebel3);
 
-const boton2 = d.createElement('button');
-boton2.classList = 'btn btn-secondary';
-boton2.setAttribute('type', 'submit');
-boton2.textContent = 'Buscar';
+const boton2 = d.createElement("button");
+boton2.classList = "btn btn-secondary";
+boton2.setAttribute("type", "submit");
+boton2.textContent = "Buscar";
 formulario2.appendChild(boton2);
-boton2.setAttribute('id', 'submitButton2');
+boton2.setAttribute("id", "submitButton2");
 
-const parrafo2 = d.getElementById('parrafoBuscador2');
+const parrafo2 = d.getElementById("parrafoBuscador2");
 
+//calculadora de cuotas
 
+const seccion3 = document.getElementById("calculadora");
 
+const formCalc = document.createElement("form");
+const input4 = document.createElement("input");
+input4.className = "calcularcuotas";
+input4.classList = "form-control";
+input4.placeholder = "Número de cuotas";
+formCalc.appendChild(input4);
 
+const botonCalc = document.createElement("button");
+botonCalc.textContent = "Calcular";
+botonCalc.classList = "btn btn-secondary";
+formCalc.appendChild(botonCalc);
 
-//falta agregar esta calculadora de cuotas al html.
-// calculadora de cuotas con interes
-// montoDelProducto = NaN;
+seccion3.appendChild(formCalc);
 
-// while (isNaN(montoDelProducto)) {
-//   montoDelProducto = parseFloat(prompt("Ingresa el valor del producto"));
-// }
-// const interes = 0.07;
+const parrafoCalculadora = document.getElementById("parrafoCalculadora");
 
-// let cuotas = NaN;
-// while (isNaN(cuotas)) {
-//   //cuotas = parseInt(prompt("Ingresa el número de cuotas"));
-// }
+botonCalc.addEventListener("click", function (event) {
+  event.preventDefault();
 
-// const pagoIntereses = montoDelProducto * interes;
-// const pagoTotal = montoDelProducto + pagoIntereses;
-// const pagoMensual = pagoTotal / cuotas;
+  const cuotas = parseInt(input4.value);
 
-// for (let i = 1; i <= cuotas; i++) {
-//   if (i <= 1) {
-//     console.log(
-//       "Vas a pagar " + cuotas + " cuotas de $ " + pagoMensual.toFixed(2)
-//     );
-//   }
-// }
+  if (!isNaN(cuotas) && cuotas > 0) {
+    const precioProductoObject = JSON.parse(
+      localStorage.getItem("precioProducto")
+    );
+    const montoDelProducto = parseFloat(precioProductoObject.precio); // Extrae el valor numérico
+    const interes = 0.07;
+    const pagoIntereses = montoDelProducto * interes;
+    const pagoTotal = montoDelProducto + pagoIntereses;
+    const pagoMensual = pagoTotal / cuotas;
+
+    parrafoCalculadora.textContent = `Vas a pagar ${cuotas} cuotas de $${pagoMensual.toFixed(
+      2
+    )}`;
+  } else {
+    parrafoCalculadora.textContent = "Ingresa un número válido de cuotas.";
+  }
+});
+
+//año con date en copiright
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentYearElement = document.getElementById("currentYear");
+  const currentYear = new Date().getFullYear();
+  currentYearElement.textContent = currentYear;
+});

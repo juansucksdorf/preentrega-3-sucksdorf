@@ -8,11 +8,10 @@ class Productos {
     this.estilo = estilo;
     this.precio = precio;
   }
-  
   obtenerPrecio() {
-    const precioDato = JSON.stringify({ precio: this.precio }); 
-    localStorage.setItem('precioProducto', precioDato); 
+    localStorage.setItem('precioProducto', this.precio); 
   }
+  
    
   
   mostrarEstilo() {
@@ -32,27 +31,27 @@ const productosVerano = [
     1,
      "cartera Spring", 
      "primavera/verano",
-      "$15000"),
+      "15000"),
   new Productos(
     2,
      "bolso Spring", 
      "primavera/verano", 
-     "$17000"),
+     "17000"),
   new Productos(
     3,
      "manta Spring",
       "primavera/verano",
-       "$18000"),
+       "18000"),
   new Productos(
     4, 
     "almohadon Personalizado", 
     "primavera/verano",
-     "$9000"),
+     "9000"),
      new Productos(
       5,
       "libro safari",
       "primavera/verano",
-      "$16000")
+      "16000")
 ];
 
 const productosInvierno = [
@@ -60,27 +59,27 @@ const productosInvierno = [
     1,
      "cartera Winter",
       "otoño/invierno",
-       "$17000"),
+       "17000"),
   new Productos(
     2, 
     "bolso Winter",
      "otoño/invierno",
-      "$17000"),
+      "17000"),
   new Productos(
     3,
      "manta Winter",
       "otoño/invierno",
-       "$18000"),
+       "18000"),
   new Productos(
     4,
      "almohadon Personalizado",
       "otoño/invierno",
-       "$17000"),
+       "17000"),
   new Productos(
     5,
     "libro de la selva",
     "otoño/Verano",
-    "$16000"),
+    "16000"),
   
 ];
 
