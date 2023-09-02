@@ -1,4 +1,3 @@
-
 //primer evento 
 boton.addEventListener('click', function(event) {
   event.preventDefault();
@@ -71,3 +70,4 @@ boton2.addEventListener('click', function(event) {
     parrafo2.textContent = "Por favor, ingresa un producto válido.";
   }
 });
+

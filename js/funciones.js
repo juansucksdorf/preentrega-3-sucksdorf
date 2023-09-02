@@ -1,5 +1,3 @@
-
-
 //clase para productos
 class Productos {
   constructor(id, nombre, estilo, precio) {
