@@ -100,33 +100,5 @@ seccion3.appendChild(formCalc);
 
 const parrafoCalculadora = document.getElementById("parrafoCalculadora");
 
-botonCalc.addEventListener("click", function (event) {
-  event.preventDefault();
 
-  const cuotas = parseInt(input4.value);
 
-  if (!isNaN(cuotas) && cuotas > 0) {
-    const precioProductoObject = JSON.parse(
-      localStorage.getItem("precioProducto")
-    );
-    const montoDelProducto = parseFloat(precioProductoObject.precio); // Extrae el valor numérico
-    const interes = 0.07;
-    const pagoIntereses = montoDelProducto * interes;
-    const pagoTotal = montoDelProducto + pagoIntereses;
-    const pagoMensual = pagoTotal / cuotas;
-
-    parrafoCalculadora.textContent = `Vas a pagar ${cuotas} cuotas de $${pagoMensual.toFixed(
-      2
-    )}`;
-  } else {
-    parrafoCalculadora.textContent = "Ingresa un número válido de cuotas.";
-  }
-});
-
-//año con date en copiright
-
-document.addEventListener("DOMContentLoaded", function () {
-  const currentYearElement = document.getElementById("currentYear");
-  const currentYear = new Date().getFullYear();
-  currentYearElement.textContent = currentYear;
-});
