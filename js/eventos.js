@@ -1,5 +1,5 @@
 //evento 1
-
+ 
 function calcularRegalo(event) {
   event.preventDefault();
 
